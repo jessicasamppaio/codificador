@@ -15,7 +15,7 @@
 1. Clone o repositório:
 git clone https://github.com/jessicasamppaio/codificador.git
 
-2. Abra o arquivo index.html em seu navegador ou acesse direto pelo link: https://codificador-xi.vercel.app/
+2. Abra o arquivo index.html em seu navegador ou acesse direto pelo link: https://jessicasamppaio.github.io/codificador/
 
 ## Uso
 
