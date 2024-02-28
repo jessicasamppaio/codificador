@@ -18,8 +18,8 @@ body {
     height: 85vh;
     grid-template-rows: 1fr;
     grid-template-columns: 0.2fr 2fr 0.7fr;
-    grid-column-gap: 13%;
-    grid-row-gap: 15px;
+    grid-column-gap: 18%;
+    
     padding: 0;
 }
 
@@ -127,6 +127,7 @@ body {
     flex-direction: column;
     text-align: center;
     padding: 86px 18px 10px 23px;
+    height: 80%;
     margin: 0 auto;
     margin-top: 5px;
     width: 100%;
@@ -147,19 +148,13 @@ body {
 }
 
 footer {
-    display: flex;
-    width: 100vw;
-    height: 50px;
+    background-color: #fdc1ff00;
     color: #000000;
-    font-size: 13px;
-    padding: 10px;
-    margin: auto;
-}
-
-footer p {
     text-align: center;
-    padding-top: 30px;
-    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 @media only screen and (max-width: 700px) {
