@@ -4,6 +4,12 @@ document.getElementById('campoDeTexto').addEventListener('focus', function () {
     this.placeholder = '';
 });
 
+function ajustarAlturaMainContainer() {
+    const alturaTextoCodificado = document.querySelector(".container-section-2").offsetHeight;
+    const alturaMainContainer = alturaTextoCodificado + 50; 
+    document.querySelector(".main-container").style.height = `${alturaMainContainer}px`;
+}
+
 // iniciando a criptografia 
 const textoDigitado = document.querySelector("#campoDeTexto");
 const textoCodificado = document.querySelector(".container-section-2");
@@ -44,12 +50,13 @@ function adicionarBotaoCopiar() {
 
 
 function copiar() {
-    const textoCriptografado = textoCodificado.textContent;
-    const textarea = document.createElement('textarea');
-    textarea.value = textoCriptografado;
-    document.body.appendChild(textarea);
-    textarea.select();
+    
+    const textoCriptografado = textoCodificado.innerText.trim();
+    const temp = document.createElement('textarea');
+    temp.value = textoCriptografado;
+    document.body.appendChild(temp);
+    temp.select();
     document.execCommand('copy');
-    document.body.removeChild(textarea);
+    document.body.removeChild(temp);
     alert('Texto Copiado');
 }

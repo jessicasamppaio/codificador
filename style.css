@@ -14,12 +14,12 @@ body {
 
 .main-container {
     display: grid;
-    width: 100vh;
+    margin: auto; 
+    width: 80%;
     height: 85vh;
     grid-template-rows: 1fr;
     grid-template-columns: 0.2fr 2fr 0.7fr;
     grid-column-gap: 18%;
-    
     padding: 0;
 }
 
