@@ -4,15 +4,10 @@ document.getElementById('campoDeTexto').addEventListener('focus', function () {
     this.placeholder = '';
 });
 
-function ajustarAlturaMainContainer() {
-    const alturaTextoCodificado = document.querySelector(".container-section-2").offsetHeight;
-    const alturaMainContainer = alturaTextoCodificado + 50; 
-    document.querySelector(".main-container").style.height = `${alturaMainContainer}px`;
-}
-
 // iniciando a criptografia 
 const textoDigitado = document.querySelector("#campoDeTexto");
 const textoCodificado = document.querySelector(".container-section-2");
+
 
 function criptografar() {
     let texto = textoDigitado.value;
@@ -24,6 +19,7 @@ function criptografar() {
 
         textoCodificado.textContent = resultado;
         adicionarBotaoCopiar();
+        
 }
 
 function descriptografar() {
@@ -36,6 +32,7 @@ function descriptografar() {
 
         textoCodificado.textContent = resultadoTraduzido;
         adicionarBotaoCopiar();
+        
 }
 
 function adicionarBotaoCopiar() {

@@ -16,7 +16,8 @@ body {
     display: grid;
     margin: auto; 
     width: 90%;
-    height: 85vh;
+    height: auto;
+    min-height: 85vh;
     grid-template-rows: 1fr;
     grid-template-columns: 0.2fr 2fr 0.7fr;
     grid-column-gap: 18%;
